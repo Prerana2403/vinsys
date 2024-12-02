@@ -1,0 +1,236 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .btn {
+    background: #fcb045;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+header .btn:hover {
+    background: #ff7300;
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #f4f6ff;
+}
+
+.info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info h1 {
+    font-size: 36px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.8;
+    color: #555;
+}
+
+.schedule-box {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+}
+
+.schedule-box h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.schedule-box ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+}
+
+/* Courses Section */
+.courses {
+    background: #e4e4f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.course-item {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+    background: #dfe4ff;
+}
+
+.course-overview {
+    margin-top: 30px;
+    padding: 20px;
+    display: none;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+/* Form Section Styling */
+.form-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.form-container {
+    background: linear-gradient(145deg, #f4f4f4, #ffffff);
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container form label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background: #fafafa;
+    transition: border-color 0.3s;
+}
+
+.form-container form input:focus {
+    border-color: #4e54c8;
+    outline: none;
+}
+
+.form-container form button {
+    width: 100%;
+    background: linear-gradient(90deg, #ff7300, #fcb045);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.form-container form button:hover {
+    background: linear-gradient(90deg, #fca311, #fb8500);
+    transform: scale(1.05);
+}
+
+/* Close Button */
+.form-container .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.form-container .close-btn:hover {
+    color: #ff4d4d;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #4e54c8;
+    color: white;
+    margin-top: 20px;
+}
